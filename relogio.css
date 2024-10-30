@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Jacquarda+Bastarda+9&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Jacquarda Bastarda 9", serif;
+}
+
+body {
+    background: url("https://img.freepik.com/fotos-premium/conceito-de-tempo-e-mudanca_218381-20348.jpg") center no-repeat;
+
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    row-gap: 3rem;
+}
+
+.relogio {
+    background: #1a1a1a1a;
+    width: 90%;
+    padding: 4% 3%;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    border: 2px solid #3a5cf3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#date {
+    font-size: 2rem;
+    background-color: rgb(151, 151, 151);
+    color: #fff;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+}
+
+.relogio div {
+    background-color:rgba(102, 102, 102, 0.322) ;
+    width: 30%; 
+    padding: 3%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio div span {
+    font-size: 6rem;
+    color: #eeeef7;
+}
+
+.relogio div span.tempo {
+    font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .relogio {
+        
+       height: auto;
+       width: 70;
+
+       flex-direction: column; 
+       padding: 1rem;
+    }   
+
+    .relogio div {
+        
+        width: 100%; 
+       margin-bottom: 1rem;
+    }
+}
+
